@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./city5.jpeg);
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        div.main{
+            position: relative;
+        }
+        @keyframes animi1{
+             0%{
+                background-color:green;
+                box-shadow: 0 0 60px 10px green;
+            }
+            50%{background-color: red;
+                box-shadow: 0 0 60px 10px red;
+                
+            }
+        }
+        .checked1:checked~.cl3{
+            animation-name: animi1;
+            animation-duration: 20s;
+            animation-direction: forwards;
+
+         }
+         .checked2:checked~.cl3{
+            background-color: green;
+            box-shadow: 0 0 60px 10px green;
+         }
+         .checked2:checked~.car1{
+            transform: translateX(1150px);
+            transition-timing-function:linear;
+            transition-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        .checked2:checked~.car3{
+            transform: translateX(1150px);
+            transition-timing-function:ease-in ;
+            transition-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        .checked2:checked~.car4{
+            transform: translateX(1150px);
+            transition-timing-function: ease-in-out;
+            transition-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        .checked1:checked~.car1{
+            transform: translateX(420px);
+            transition-timing-function: ease-in-out;
+            transition-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        .checked1:checked~.car4{
+            transform: translateX(420px);
+            transition-timing-function: ease-in;
+            transition-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        .checked1:checked~.car3{
+            transform: translateX(420px);
+            transition-timing-function:linear;
+            transition-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        img{
+            position: absolute;
+            height: 80px;
+            width: 80px;
+        }
+        button{
+            margin-top: 210px;
+            height:60px;
+            width: 60px;
+            border-radius: 50px;
+            margin-left: 350px;
+            border-color: transparent;
+        }
+        .car1{
+            top: 350px;
+
+        }label{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div.main>
+        
+        <input type="radio" class="checked1" id="fm" name="color"><label for="fm">first me</label>
+        <input type="radio" class="checked2" id="sm" name="color"><label for="sm">second me</label>
+        <button class="cl3">S</button>
+        <br><img src="./car5.svg" alt="car1" class="car1"><br><br><br><br><br><br><br>
+        <img src="./car3.svg" alt="car3" class="car3"><br><br><br>
+        <img src="./car4.svg" alt="car4" class="car4">
+    </div>
+</body>
+</html>
